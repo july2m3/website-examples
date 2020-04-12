@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #444;
+  text-align: center;
+  color: #fff;
+}
+
+a,
+a:visited {
+  color: #fff;
+}
+
+h1 {
+  margin: 40px;
+}
+
+.card-layout {
+  margin: 100px 0;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 25%;
+  margin: 0 auto;
+}
+
+.card img {
+  width: calc(25vw - 8px);
+  height: auto;
+  padding: 8px;
+}
