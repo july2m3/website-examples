@@ -1,26 +1,76 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+
+import Home from './components/home/Home';
+import CardLayout from './components/CardLayout';
+
 import './App.css';
 
-function App() {
+const Test = () => <p>this is only a test</p>;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <>
+        <nav className='nav__top'>
+          <ul>
+            <li className='li__view-code'>
+              <button>View Code</button>
+            </li>
+            <li className='li__picture li__picture-left'>
+              <i className='fas fa-desktop nav__selection' />
+            </li>
+            <li className='li__picture'>
+              <i className='fas fa-mobile-alt nav__selection' />
+            </li>
+            <li className='li__dropdown'>
+              <div className='dropdown'>
+                <button className='dropbtn'>
+                  Web-Site <i className='fas fa-angle-down nav__chevron'></i>
+                </button>
+                <div className='dropdown-content'>
+                  <Link to='/'>
+                    <a href='#'>Home</a>
+                  </Link>
+                  <Link to='/test'>
+                    <a href='#'>Test</a>
+                  </Link>
+                  <Link to='card-layout'>
+                    <a href='#'>Card Layout</a>
+                  </Link>
+                </div>
+              </div>
+              {/* <button className='button__dropdown'>Website Themes</button>
+              <div className='div_dropdown-content'>
+                <p>
+                  <Link to='/'>Home</Link>
+                </p>
+                <p>
+                  <Link to='/card-layout'>Card Layout</Link>
+                </p>
+                <p>
+                  <Link to='/test'>Test</Link>
+                </p>
+              </div> */}
+            </li>
+          </ul>
+        </nav>
+        <main className='main__content'>
+          <Switch>
+            <Route path='/card-layout'>
+              <CardLayout />
+            </Route>
+            <Route path='/test'>
+              <Test />
+            </Route>
+            <Route path='/'>
+              <Home />
+            </Route>
+          </Switch>
+        </main>
+      </>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

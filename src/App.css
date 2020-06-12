@@ -1,38 +1,118 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-font-size: 1.5rem;
+  --nav-font-color: #333;
+}
+
+body {
+  font-size: 10px;
+}
+
+.nav__top {
+  height: 80px;
+  border-bottom: 0.2rem solid #333;
+}
+
+.nav__top ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__top ul li {
+  font-size: var(--nav-font-size);
+  list-style-type: none;
+}
+
+.nav__top a,
+.nav__top a:visited {
+  color: var(--nav-font-color);
+  text-decoration: none;
+}
+
+.nav__top a:hover {
+  text-decoration: underline;
+}
+
+.main__content {
+  margin-left: 10%;
+  height: 100vh;
+}
+
+.li__view-code {
+  width: 25%;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.li__view-code button {
+  background-color: #fff;
+  font-size: var(--nav-font-size);
+  border: none;
+  padding: 16px;
+}
+
+.li__picture {
+  width: 25%;
+  padding: 1rem;
+}
+.li__picture-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__selection:hover {
+  transform: scale(1.2);
+}
+
+.li__dropdown {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.nav__chevron {
+  font-size: 1rem;
+}
+
+.dropbtn {
+  color: var(--nav-font-color);
+  background-color: #fff;
+  width: 260px;
+  padding: 16px;
+  font-size: var(--nav-font-size);
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown-content a {
+  color: var(--nav-font-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
 }
