@@ -52,11 +52,10 @@ body {
   justify-content: center;
 }
 
-.li__view-code button {
+.li__view-code a,
+.li__view-code a:visited {
   background-color: #fff;
   font-size: var(--nav-font-size);
-  border: none;
-  padding: 16px;
 }
 
 .li__picture {

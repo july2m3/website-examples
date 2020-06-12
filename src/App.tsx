@@ -15,7 +15,9 @@ const App = () => {
         <nav className='nav__top'>
           <ul>
             <li className='li__view-code'>
-              <button>View Code</button>
+              <a href='https://github.com/july2m3/website-examples'>
+                View Code
+              </a>
             </li>
             <li className='li__picture li__picture-left'>
               <i className='fas fa-desktop nav__selection' />
