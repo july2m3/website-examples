@@ -1,0 +1,23 @@
+.nav__gourmet-catering {
+  border-bottom: solid 1px black;
+  width: 100%;
+}
+
+.nav__gourmet-catering ul {
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+
+.nav__gourmet-catering ul li {
+  margin: 2rem;
+  font-size: 1rem;
+}
+
+.nav__gourmet-catering ul li:first-child {
+  position: absolute;
+  left: 20px;
+}

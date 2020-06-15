@@ -1,11 +1,15 @@
 import React from 'react'
 
+
+import './style.css';
+import Nav from './Nav';
+
 function GourmetCatering() {
     return (
-        <div>
+        <>
             {/* nav, header, about, menu, contact, footer */}
-            
-        </div>
+          <Nav />  
+        </>
     )
 }
 
