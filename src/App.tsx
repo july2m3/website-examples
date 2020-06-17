@@ -2,11 +2,9 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './components/home/Home';
-import CardLayout from './components/CardLayout';
+import GourmetCatering from './components/gourmet-catering/App';
 
 import './App.css';
-
-const Test = () => <p>this is only a test</p>;
 
 const App = () => {
   return (
@@ -34,11 +32,8 @@ const App = () => {
                   <Link to="/">
                     <button className="link">Home</button>
                   </Link>
-                  <Link to="/test">
-                    <button className="link">Test</button>
-                  </Link>
-                  <Link to="card-layout">
-                    <button className="link">Card Layout</button>
+                  <Link to="gourmet-catering">
+                    <button className="link">Gourmet Catering</button>
                   </Link>
                 </div>
               </div>
@@ -47,11 +42,8 @@ const App = () => {
         </nav>
         <main className="main__content">
           <Switch>
-            <Route path="/card-layout">
-              <CardLayout />
-            </Route>
-            <Route path="/test">
-              <Test />
+            <Route path="/gourmet-catering">
+              <GourmetCatering />
             </Route>
             <Route path="/">
               <Home />

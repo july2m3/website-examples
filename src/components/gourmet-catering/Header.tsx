@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+import headerBG from './header-bg.jpg';
 
 function Header() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <header className="gourmet-catering__header">
+      <img src={headerBG} alt="Burget background" />
+      <p>Gourmet Catering</p>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
