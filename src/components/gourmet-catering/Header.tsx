@@ -4,9 +4,9 @@ import headerBG from './header-bg.jpg';
 
 function Header() {
   return (
-    <header className="gourmet-catering__header">
-      <img src={headerBG} alt="Burget background" />
-      <p>Gourmet Catering</p>
+    <header className="header">
+      <img className="header__image" src={headerBG} alt="Burget background" />
+      <p className="header__text">Gourmet Catering</p>
     </header>
   );
 }

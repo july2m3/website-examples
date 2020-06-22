@@ -1,45 +1,44 @@
-.nav__gourmet-catering {
+.navigation {
   font-family: cursive;
   border-bottom: solid 1px black;
   width: 100%;
+  .navigation__list {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 90px;
+    font-weight: bold;
+
+    .navigation__list-item {
+      margin: 2rem;
+      font-size: 1.5rem;
+
+      :first-child {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+      }
+    }
+  }
 }
 
-.nav__gourmet-catering ul {
-  list-style-type: none;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 90px;
-  font-weight: bold;
-}
-
-.nav__gourmet-catering ul li {
-  margin: 2rem;
-  font-size: 1.5rem;
-}
-
-.nav__gourmet-catering ul li:first-child {
-  position: absolute;
-  top: 5px;
-  left: 20px;
-}
-
-.gourmet-catering__header {
+.header {
   position: relative;
   width: 100%;
   height: calc(100vh - 90px);
-}
 
-.gourmet-catering__header img {
-  width: 100%;
-  height: 100%;
-}
+  .header__image {
+    width: 100%;
+    height: 100%;
+  }
 
-.gourmet-catering__header p {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-size: 2rem;
-  color: #333;
+  .header__text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
 }

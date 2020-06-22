@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 
-import './style.css';
+import './style.scss';
 import Nav from './Nav';
 import Header from './Header';
 

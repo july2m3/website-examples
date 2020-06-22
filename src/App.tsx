@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './components/home/Home';
-import GourmetCatering from './components/gourmet-catering';
+import GourmetCatering from './components/gourmet-catering/';
 
 import './App.css';
 
