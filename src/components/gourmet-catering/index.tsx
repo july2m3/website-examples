@@ -19,8 +19,8 @@ const GourmetCatering = () => {
       <Nav />
       <Header />
       <About />
-      <Contact />
       <Menu />
+      <Contact />
       <Footer />
     </>
   );

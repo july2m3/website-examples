@@ -4,10 +4,10 @@ import aboutImage from './images/about.jpg';
 
 function About() {
   return (
-    <div className="about">
-      <img className="about__image" src={aboutImage} alt="about" />
-      <div className="about__text">
-        <h1>About Catering</h1>
+    <div className="info">
+      <img className="info__image" src={aboutImage} alt="about" />
+      <div className="info__text">
+        <h1>About Gourmet Catering</h1>
         <h3>Catering since 2021</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quod
