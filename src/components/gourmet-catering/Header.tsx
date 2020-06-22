@@ -1,6 +1,6 @@
 import React from 'react';
 
-import headerBG from './header-bg.jpg';
+import headerBG from './images/header-bg.jpg';
 
 function Header() {
   return (

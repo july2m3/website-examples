@@ -42,3 +42,41 @@
     color: #333;
   }
 }
+
+.about {
+  margin-top: 4rem;
+  display: flex;
+
+  .about__image {
+    width: 40%;
+    padding: 2rem;
+  }
+
+  .about__text {
+    width: 60%;
+    padding: 4rem;
+    text-align: center;
+
+    h1,
+    h3,
+    p {
+      margin: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+}
