@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Home from './components/home/Home';
 import GourmetCatering from './components/gourmet-catering';
 
-import './App.css';
+import './App.scss';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
             <li className="li__picture li__picture-left">
               <i className="fas fa-desktop nav__selection" />
             </li>
-            <li className="li__picture">
+            <li className="li__picture li__picture-right">
               <i className="fas fa-mobile-alt nav__selection" />
             </li>
             <li className="li__dropdown">

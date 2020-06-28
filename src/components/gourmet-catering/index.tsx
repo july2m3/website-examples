@@ -6,7 +6,6 @@ import Nav from './Nav';
 import Header from './Header';
 import About from './About';
 import Menu from './Menu';
-import Contact from './Contact';
 import Footer from './Footer';
 
 const GourmetCatering = () => {
@@ -20,7 +19,6 @@ const GourmetCatering = () => {
       <Header />
       <About />
       <Menu />
-      <Contact />
       <Footer />
     </>
   );
