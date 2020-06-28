@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './components/home/Home';
 import GourmetCatering from './components/gourmet-catering';
+import Photography from './components/photography';
 
 import './App.scss';
 
@@ -40,6 +41,11 @@ const App = () => {
                       Gourmet Catering
                     </button>
                   </Link>
+                  <Link to="photography">
+                    <button className="link" type="button">
+                      Photography
+                    </button>
+                  </Link>
                 </div>
               </div>
             </li>
@@ -49,6 +55,9 @@ const App = () => {
           <Switch>
             <Route path="/gourmet-catering">
               <GourmetCatering />
+            </Route>
+            <Route path="/photography">
+              <Photography />
             </Route>
             <Route path="/">
               <Home />
