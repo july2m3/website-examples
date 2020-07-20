@@ -28,7 +28,7 @@ const Photography = () => {
       </header>
       <main className="about-me">
         <h1 className="about-me__title">About Me</h1>
-        <h3 className="about-me__subheading">I love art</h3>
+        <p className="about-me__subheading">I love art</p>
         <p className="about-me__info">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
           magni consequuntur impedit inventore iste fugit possimus hic ut
@@ -68,6 +68,14 @@ const Photography = () => {
           <input type="text" />
         </form>
       </div>
+      <footer className="photography-footer">
+        <button type="button">
+          <i className="fas fa-arrow-up icon" />
+          To the top
+        </button>
+        <p>icons here: </p>
+        <p>copyright me</p>
+      </footer>
     </>
   );
 };

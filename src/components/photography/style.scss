@@ -1,3 +1,7 @@
+body {
+  line-height: 1.5;
+}
+
 .photography-header {
   position: relative;
   background-color: blue;
@@ -35,5 +39,46 @@
     font-size: 2rem;
     background-color: black;
     transform: translate(-50%, -50%);
+  }
+}
+
+.about-me {
+  padding-top: 10vh;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+
+  .about-me__title {
+    font-size: 2rem;
+  }
+
+  .about-me__subheading {
+    font-size: 1.4rem;
+  }
+
+  .about-me__info {
+    text-align: left;
+  }
+}
+
+.photography-footer {
+  height: 30vh;
+  background-color: rgb(93, 93, 93);
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // give flex items some spacing
+  & > * {
+    margin: 0.5rem;
+  }
+
+  button {
+    padding: 1rem;
+    .icon {
+      margin: 0 1rem 0 0.5rem;
+    }
   }
 }
