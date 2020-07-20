@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 // import headerBG from './images/header-bg.jpg';
-import './style.scss';
+import "./style.scss";
 
 const Photography = () => {
   return (
@@ -10,9 +10,18 @@ const Photography = () => {
         <nav className="photography-header__navigation">
           <ul className="photography-header__list">
             <li className="photography-header__list-item">Home</li>
-            <li className="photography-header__list-item">About</li>
-            <li className="photography-header__list-item">Portfolio</li>
-            <li className="photography-header__list-item">Contact</li>
+            <li className="photography-header__list-item">
+              <i className="fa fa-user icon" aria-hidden="true" />
+              About
+            </li>
+            <li className="photography-header__list-item">
+              <i className="fas fa-grip-horizontal icon" />
+              Portfolio
+            </li>
+            <li className="photography-header__list-item">
+              <i className="far fa-envelope icon" />
+              Contact
+            </li>
           </ul>
           <p className="photography-header__logo">Lonesome Design</p>
         </nav>

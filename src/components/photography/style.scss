@@ -2,12 +2,27 @@
   position: relative;
   background-color: blue;
   height: 70vh;
-  background: url('./images/header-bg.jpg');
+  background: url("./images/header-bg.jpg");
   background-size: cover;
   background-position: center;
   color: white;
 
-  .photography-header__nav {
+  .photography-header__navigation {
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        font-size: 1.2rem;
+        padding: 10px;
+
+        &:hover {
+          background-color: #333;
+        }
+        .icon {
+          margin-right: 0.5rem;
+        }
+      }
+    }
   }
 
   .photography-header__logo {
