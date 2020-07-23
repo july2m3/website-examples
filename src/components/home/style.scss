@@ -3,8 +3,19 @@
   font-size: 2rem;
   text-align: center;
 }
+
 .home__main {
   margin-top: 20px;
   text-align: center;
   font-size: 1.5rem;
+}
+
+.websites {
+  margin: 1rem;
+  ul {
+    li {
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+  }
 }
