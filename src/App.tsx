@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
-import Home from './components/home/Home';
-import GourmetCatering from './components/gourmet-catering';
-import Photography from './components/photography';
+import Home from "./components/home/Home";
+import GourmetCatering from "./components/gourmet-catering";
+import Photography from "./components/photography";
 
-import './App.scss';
+import "./App.scss";
 
 const App = () => {
   return (

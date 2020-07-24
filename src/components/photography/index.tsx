@@ -1,11 +1,15 @@
+/* eslint-disable quotes */
 import React from "react";
 
 // import headerBG from './images/header-bg.jpg';
 import "./style.scss";
 
+import aboutMeImage from "./images/about.jpg";
+import portfolioImage from "./images/portfolio.jpg";
+
 const Photography = () => {
   return (
-    <>
+    <div id="home">
       <header className="photography-header">
         <nav className="photography-header__navigation">
           <ul className="photography-header__list">
@@ -40,17 +44,50 @@ const Photography = () => {
           sit nihil vitae ex vel magnam quis sunt, aliquid, iure ab sequi id
           voluptates, corrupti maiores quibusdam.
         </p>
-        <p className="about-me__more-info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni
-          accusantium libero consequuntur excepturi ipsum optio sequi.
-          Architecto, asperiores? Velit facilis omnis esse dolores hic rem.
-          Facilis aperiam voluptatum blanditiis.
-        </p>
-        <img src="#" alt="Pic of me" />
+        <div className="about-me__more-info">
+          <div className="image">
+            <img src={aboutMeImage} alt="Pic of me" />
+            <p>Me dfkda</p>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              magni accusantium libero consequuntur excepturi ipsum optio sequi.
+              Architecto, asperiores? Velit facilis omnis esse dolores hic rem.
+              Architecto, asperiores? Velit facilis omnis esse dolores hic rem.
+              Facilis aperiam voluptatum blanditiis. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Culpa magni accusantium libero
+              consequuntur excepturi ipsum optio sequi. Architecto, asperiores?
+              Facilis aperiam voluptatum blanditiis. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Culpa magni accusantium libero
+              consequuntur excepturi ipsum optio sequi. Architecto, asperiores?
+              Velit facilis omnis esse dolores hic rem. Facilis aperiam
+              voluptatum blanditiis.
+            </p>
+          </div>
+        </div>
       </main>
 
       <article className="portfolio">
-        <img src="" className="portfolio-image" alt="portfolio" />
+        <div className="portfolio__stats">
+          <ul>
+            <li>
+              120+
+              <span>Projects</span>
+            </li>
+            <li>
+              400+
+              <span>Pictures</span>
+            </li>
+            <li>
+              70+
+              <span>Clients</span>
+            </li>
+          </ul>
+        </div>
+        <div className="image">
+          <h1>Portfolio</h1>
+        </div>
         <div className="portfolio__showcase">
           <h1>My Work</h1>
           <p>Here are some of my latest art pieces</p>
@@ -76,7 +113,7 @@ const Photography = () => {
         <p>icons here: </p>
         <p>copyright me</p>
       </footer>
-    </>
+    </div>
   );
 };
 

@@ -1,14 +1,20 @@
 body {
   line-height: 1.5;
 }
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
 
 .photography-header {
+  font-family: serif;
   position: relative;
   background-color: blue;
   height: 60vh;
-  background: url("./images/header-bg.jpg");
+  background: url("./images/header-2-bg.jpg");
   background-size: cover;
   background-position: center;
+  // background-position: 0 -b00px;
   color: white;
 
   .photography-header__navigation {
@@ -43,27 +49,112 @@ body {
 }
 
 .about-me {
-  padding-top: 10vh;
+  padding-top: 5vh;
   width: 70%;
   margin: 0 auto;
   text-align: center;
 
   .about-me__title {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .about-me__subheading {
-    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-me__subheading,
+  .about-me__info {
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   .about-me__info {
     text-align: left;
+    line-height: 2;
+  }
+
+  .about-me__more-info {
+    display: flex;
+    flex: 1;
+    div {
+      width: 50%;
+    }
+    div:nth-child(2) {
+      display: flex;
+      align-items: center;
+    }
+
+    .image {
+      padding: 1rem;
+      position: relative;
+
+      p {
+        position: absolute;
+        top: 10%;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      img {
+        clip-path: polygon(0% 25%, 100% 25%, 100% 75%, 0% 75%);
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// PORTFOLIO SECTION
+.portfolio {
+  .portfolio__stats {
+    width: 100%;
+    background-color: rgb(126, 126, 126);
+    color: white;
+
+    ul {
+      height: 20vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 1.4rem;
+
+      li {
+        list-style: none;
+        text-align: center;
+
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .image {
+    height: 60vh;
+    width: 100%;
+    background: url("./images/portfolio.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+      letter-spacing: 6px;
+    }
+  }
+
+  .portfolio__showcase {
+    padding-top: 1rem;
   }
 }
 
 .photography-footer {
   height: 30vh;
-  background-color: rgb(93, 93, 93);
+  background-color: rgb(126, 126, 126);
   color: white;
   display: flex;
   font-size: 1rem;
